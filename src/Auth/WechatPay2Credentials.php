@@ -137,7 +137,13 @@ class WechatPay2Credentials implements Credentials
             $body = (string)$bodyStream;
             $bodyStream->rewind();
         }
-        
+        if (mb_strpos($request->getRequestTarget(), '/v3/transferdownload/signfile')  !== false) {
+            return $request->getMethod()."\n".
+                $request->getRequestTarget()."\n".
+                $timestamp."\n".
+                $nonce."\n".
+                $body;
+        }
         return $request->getMethod()."\n".
             $request->getRequestTarget()."\n".
             $timestamp."\n".

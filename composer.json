@@ -1,5 +1,5 @@
 {
-    "name": "wechatpay/wechatpay-guzzle-middleware",
+    "name": "shenstef/wechatpay-guzzle-middleware",
     "version": "0.2.1",
     "description": "WechatPay API V3 Guzzle Middleware",
     "type": "library",
@@ -10,7 +10,8 @@
     "license": "Apache-2.0",
     "require": {
         "php": ">=5.5",
-        "ext-openssl": "*"
+        "ext-openssl": "*",
+        "ext-mbstring": "*"
     },
     "require-dev": {
         "guzzlehttp/guzzle": "^6.3"

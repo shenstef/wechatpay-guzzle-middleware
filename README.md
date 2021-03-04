@@ -29,22 +29,9 @@
 
 #### Composer
 
-方式一：在项目目录中，通过composer命令行添加：
+方式：在项目目录中，通过composer命令行添加：
 ```shell
-composer require wechatpay/wechatpay-guzzle-middleware
-```
-
-
-方式二：在项目的composer.json中加入以下配置：
-
-```json
-    "require": {
-        "wechatpay/wechatpay-guzzle-middleware": "^0.2.0"
-    }
-```
-添加配置后，执行安装
-```shell
-composer install
+composer require shenstef/wechatpay-guzzle-middleware
 ```
 
 
